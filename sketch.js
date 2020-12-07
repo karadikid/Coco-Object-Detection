@@ -26,6 +26,11 @@ function gotDetections(error, results) {
 		fill(0);
 		textSize(24);
 		text(object.label, object.x+10, object.y+24);
+		noStroke();
+		fill(255);
+		textSize(20);
+		let confidence = nf(object.confidence, 0, 3);
+		text(confidence, object.x+60, object.y+150);
 		console.log(object.label);
 	}
 }
