@@ -7,7 +7,7 @@ This demonstrates  basic Machine Learning using a pretrained model with Javascri
 - MobileNet
 
 ### Live Demonstration
-[Live Github Page](https://karadikid.github.io/MobileNet-ImageClassifier/)
+[Live Github Page](https://karadikid.github.io/Coco-Object-Detection/)
 
 ![](https://github.com/karadikid/MobileNet-ImageClassifier/blob/main/ml5.js-ImageClassifier.gif)
 
