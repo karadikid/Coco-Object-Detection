@@ -21,7 +21,12 @@ function gotDetections(error, results) {
 		stroke(0, 255, 0);
 		strokeWeight(4);
 		noFill();
-		rect(object.x, object.y, object.width, object.height)
+		rect(object.x, object.y, object.width, object.height);
+		noStroke();
+		fill(0);
+		textSize(24);
+		text(object.label, object.x+10, object.y+24);
+		console.log(object.label);
 	}
 }
 
