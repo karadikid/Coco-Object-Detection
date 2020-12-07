@@ -31,8 +31,9 @@ function gotDetections(error, results) {
 		textSize(20);
 		let confidence = nf(object.confidence, 0, 3);
 		text(confidence, object.x+60, object.y+150);
-		console.log(object.label);
+		setTimeout (() => { console.log(object.label); }, 500);
 		objectDetector.detect(video, gotDetections);
+		//setTimeout(() => { objectDetector.detect(video, gotDetections); }, 200);
 	}
 }
 
