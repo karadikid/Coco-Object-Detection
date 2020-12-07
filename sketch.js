@@ -26,6 +26,7 @@ function setup() {
 	createCanvas(640, 480);
 	video = createCapture(VIDEO);
 	video.size(640, 480);
+	video.hide();
 	objectDetector.detect(video, gotDetections);
 }
 
