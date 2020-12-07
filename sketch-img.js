@@ -1,4 +1,4 @@
-let video;
+let img;
 let objectDetector;
 let object;
 
@@ -32,17 +32,15 @@ function gotDetections(error, results) {
 		let confidence = nf(object.confidence, 0, 3);
 		text(confidence, object.x+60, object.y+150);
 		console.log(object.label);
-		objectDetector.detect(video, gotDetections);
 	}
 }
 
 function setup() {
 	createCanvas(640, 480);
-	video = createCapture(VIDEO);
-	video.size(640, 480);
-	objectDetector.detect(video, gotDetections);
+	image(img, 0, 0);
+	objectDetector.detect(img, gotDetections);
 }
 
 function draw() {
-	image(video, 0, 0);
+
 }
